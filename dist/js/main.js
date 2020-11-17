@@ -35,3 +35,19 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+var i = 0;
+var txt = '......';
+var speed = 50;
+let innerHTML = document.getElementById('type-writer');
+//Type writer Effect
+if (innerHTML) {
+  setInterval(function typewriter() {
+    innerHTML = document.getElementById('type-writer').innerHTML += txt.charAt(
+      i
+    );
+    if (innerHTML.length > 5) {
+      innerHTML = document.getElementById('type-writer').innerHTML = '';
+    }
+  }, 400);
+}
