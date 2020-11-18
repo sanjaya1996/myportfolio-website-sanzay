@@ -51,3 +51,11 @@ if (innerHTML) {
     }
   }, 400);
 }
+
+function toogleVideoPlayer() {
+  var videoPlayer = document.querySelector('.video-player');
+  var video = document.querySelector('video');
+  videoPlayer.classList.toggle('active');
+  video.pause();
+  video.currentTime = 0;
+}

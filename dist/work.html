@@ -74,9 +74,18 @@
         </div>
 
         <div class="item">
-          <a href="#!">
-            <img src="img/projects/project2.jpg" alt="Project" />
-          </a>
+          <div class="video-container">
+            <a href="#" onclick="toogleVideoPlayer();"></a>
+              <img src="img/projects/project2.jpg" alt="Project" />
+            </a>
+            <a href="#" onclick="toogleVideoPlayer();" class="play-btn">
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+          <div class="video-player">
+            <video src="mp4/react-nativeApp.mp4" controls="true"></video>
+            <img src="img/close-btn.png" alt="close" class="close-btn" onclick="toogleVideoPlayer();" />
+          </div>
           <a
             href="https://github.com/sanjaya1996/reactNative-costTrackingApp"
             target="_blank"
