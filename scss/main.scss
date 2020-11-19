@@ -114,6 +114,17 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr);
 
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+
   .video-container {
     position: relative;
 
@@ -134,17 +145,6 @@ main {
         background: $primary-color;
         @include easeOut;
       }
-    }
-  }
-
-  img {
-    width: 100%;
-    border: 3px #fff solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
     }
   }
 }
