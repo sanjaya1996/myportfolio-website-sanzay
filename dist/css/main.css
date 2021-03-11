@@ -198,14 +198,22 @@ main {
       cursor: pointer;
       transition: 0.5s;
       color: #fff;
-      background: #666666;
-      width: 40px;
+      background: #333;
+      width: 50px;
+      height: 50px;
       border-radius: 20%;
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .projects .video-container .play-btn:hover {
         color: #eece1a;
-        background: #333;
+        opacity: 0.85;
         transition: all 0.5s ease-out; }
+        .projects .video-container .play-btn:hover .play-icon {
+          color: #eece1a; }
+      .projects .video-container .play-btn .play-icon {
+        color: white; }
 
 .video-player {
   position: fixed;

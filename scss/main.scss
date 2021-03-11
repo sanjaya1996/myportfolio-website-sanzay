@@ -135,15 +135,26 @@ main {
       cursor: pointer;
       transition: 0.5s;
       color: set-text-color($primary-color);
-      background: lighten($primary-color, 20);
-      width: 40px;
+      background: $primary-color;
+      width: 50px;
+      height: 50px;
       border-radius: 20%;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         color: $secondary-color;
-        background: $primary-color;
+        opacity: 0.85;
         @include easeOut;
+        .play-icon {
+          color: $secondary-color;
+        }
+      }
+
+      .play-icon {
+        color: white;
       }
     }
   }
