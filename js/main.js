@@ -58,3 +58,8 @@ function toogleVideoPlayer() {
   video.pause();
   video.currentTime = 0;
 }
+
+function formSubmitHandler(e) {
+  e.preventDefault();
+  return;
+}
